@@ -8,9 +8,10 @@ def celcius_to_fahrenheit(celcius = 0):
 
     return result
 
-print(celcius_to_fahrenheit(44.5))
-print(celcius_to_fahrenheit(-273.15))
-print(celcius_to_fahrenheit(-300))
+temperatures = [10,-20,-289,100]
+
+for item in temperatures:
+    print(celcius_to_fahrenheit(item))
 
 # money={"saving_account":200, "checking_account":100, "under_bed":[500,10,100]}
 # print(money['under_bed'][1]);
