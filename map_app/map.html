@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_36beb16899354778b89dc4c4a09ed614 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_36beb16899354778b89dc4c4a09ed614" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_36beb16899354778b89dc4c4a09ed614 = L.map(
+                                  'map_36beb16899354778b89dc4c4a09ed614',
+                                  {center: [40.780281,-73.96295],
+                                  zoom: 13,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_d6db190fc0294351ae05c6c701d4c4b0 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_36beb16899354778b89dc4c4a09ed614);
+
+        
+    
+            var feature_group_00ef746823544d048a1759262215a8c9 = L.featureGroup(
+                ).addTo(map_36beb16899354778b89dc4c4a09ed614);
+        
+    
+
+            var marker_4a6d03eaa87a4f5cb437ab0238e1f70e = L.marker(
+                [40.78134,-73.967373],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_00ef746823544d048a1759262215a8c9);
+            
+    
+
+                var icon_ff6634de6abe4eac99fd96c731165f43 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4a6d03eaa87a4f5cb437ab0238e1f70e.setIcon(icon_ff6634de6abe4eac99fd96c731165f43);
+            
+    
+            var popup_a9f6d7f1ea7044fb842ea91b54b470be = L.popup({maxWidth: '300'});
+
+            
+                var html_0df35318fd294121beabf19d7c05ccf8 = $('<div id="html_0df35318fd294121beabf19d7c05ccf8" style="width: 100.0%; height: 100.0%;">New York, Central Park )))</div>')[0];
+                popup_a9f6d7f1ea7044fb842ea91b54b470be.setContent(html_0df35318fd294121beabf19d7c05ccf8);
+            
+
+            marker_4a6d03eaa87a4f5cb437ab0238e1f70e.bindPopup(popup_a9f6d7f1ea7044fb842ea91b54b470be);
+
+            
+        
+</script>
